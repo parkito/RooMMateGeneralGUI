@@ -1,8 +1,9 @@
 package com.roommate.generalgui.controller;
 
-import com.roommate.generalgui.exceptions.DAOException;
-import com.roommate.generalgui.exceptions.ResponseEntityException;
-import mainDomainModel.User;
+
+import mainDomainModel.entities.User;
+import mainDomainModel.exceptions.DAOException;
+import mainDomainModel.exceptions.ResponseEntityException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

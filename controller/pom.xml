@@ -14,5 +14,13 @@
     <artifactId>controller</artifactId>
     <version>1.0</version>
 
-    
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.DataModel</groupId>
+                <artifactId>DataModel</artifactId>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 </project>

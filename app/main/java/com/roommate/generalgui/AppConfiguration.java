@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import org.springframework.web.servlet.view.JstlView;
 
 /**
  * @author Artem Karnov @date 03.02.2017.
@@ -25,7 +26,7 @@ public class AppConfiguration extends WebMvcConfigurerAdapter {
     @Bean
     public InternalResourceViewResolver viewResolver() {
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-        resolver.setViewClass(org.springframework.web.servlet.view.JstlView.class);
+        resolver.setViewClass(JstlView.class);
         resolver.setPrefix("/");
         resolver.setSuffix(".jsp");
         return resolver;
