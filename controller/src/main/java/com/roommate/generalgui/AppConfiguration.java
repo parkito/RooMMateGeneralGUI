@@ -1,4 +1,4 @@
-package com.portal;
+package com.roommate.generalgui;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.support.ErrorPageFilter;

@@ -1,4 +1,4 @@
-package com.portal.exceptions;
+package com.roommate.generalgui.exceptions;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

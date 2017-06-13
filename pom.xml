@@ -10,7 +10,16 @@
         <version>1.5.0.RELEASE</version>
     </parent>
 
-    <groupId>com.GUIChat</groupId>
+    <modules>
+        <module>app</module>
+        <module>client</module>
+        <module>controller</module>
+        <module>service</module>
+        <module>utils</module>
+        <module>integration-tests</module>
+    </modules>
+
+    <groupId>com.roommate.generalgui</groupId>
     <artifactId>GUIChat</artifactId>
     <version>1.0</version>
 

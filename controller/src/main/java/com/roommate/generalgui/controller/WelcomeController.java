@@ -1,7 +1,7 @@
-package com.portal.controller;
+package com.roommate.generalgui.controller;
 
-import com.portal.exceptions.DAOException;
-import com.portal.exceptions.ResponseEntityException;
+import com.roommate.generalgui.exceptions.DAOException;
+import com.roommate.generalgui.exceptions.ResponseEntityException;
 import mainDomainModel.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
