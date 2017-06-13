@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.roommate.generalgui;
+package com.roommate.generalgui.app;
 
 import org.junit.Before;
 import org.junit.Test;

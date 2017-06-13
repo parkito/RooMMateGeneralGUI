@@ -1,4 +1,4 @@
-package com.roommate.generalgui;
+package com.roommate.generalgui.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

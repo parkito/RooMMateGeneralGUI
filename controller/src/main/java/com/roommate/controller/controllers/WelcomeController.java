@@ -1,9 +1,10 @@
-package com.roommate.generalgui.controller;
+package com.roommate.controller.controllers;
 
 
 import mainDomainModel.entities.User;
 import mainDomainModel.exceptions.DAOException;
 import mainDomainModel.exceptions.ResponseEntityException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,7 +29,7 @@ public class WelcomeController {
     private final static String PASSWORD_E = "password=";
     private final static String ADD_USER = "addUser?";
 
-    //    @Autowired
+    @Autowired
     RestTemplate restTemplate;
 
     @RequestMapping("/")

@@ -1,10 +1,12 @@
-package com.roommate.generalgui;
+package com.roommate.generalgui.app;
 
+import com.roommate.controller.ControllerConfig;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.support.ErrorPageFilter;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
@@ -14,8 +16,10 @@ import org.springframework.web.servlet.view.JstlView;
  *         artem.karnov@t-systems.com
  */
 
-@Configuration
-//@EnableWebMvc
+@Import({
+        ControllerConfig.class
+})
+@EnableWebMvc
 public class AppConfiguration extends WebMvcConfigurerAdapter {
 
     @Override
