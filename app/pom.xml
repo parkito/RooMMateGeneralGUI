@@ -9,6 +9,11 @@
             <artifactId>controller</artifactId>
             <version>1.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.roommate.generalgui</groupId>
+            <artifactId>client</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <parent>
