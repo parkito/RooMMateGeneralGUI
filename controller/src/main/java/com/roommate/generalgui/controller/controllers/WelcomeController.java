@@ -1,4 +1,4 @@
-package com.roommate.controller.controllers;
+package com.roommate.generalgui.controller.controllers;
 
 
 import mainDomainModel.entities.User;

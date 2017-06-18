@@ -1,6 +1,6 @@
 package com.roommate.generalgui.app;
 
-import com.roommate.controller.ControllerConfig;
+import com.roommate.generalgui.controller.ControllerConfig;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.support.ErrorPageFilter;
 import org.springframework.context.annotation.Bean;

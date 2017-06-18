@@ -1,4 +1,4 @@
-package com.roommate.controller;
+package com.roommate.generalgui.controller;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -10,7 +10,7 @@ import org.springframework.web.context.request.RequestContextListener;
  *         artem.karnov@t-systems.com
  */
 @Configuration
-@ComponentScan(basePackages = {"com.roommate.controller"})
+@ComponentScan(basePackages = {"com.roommate.generalgui.controller"})
 public class ControllerConfig {
     @Bean
     public RequestContextListener requestContextListener() {
