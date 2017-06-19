@@ -70,7 +70,7 @@
             <artifactId>jstl-api</artifactId>
             <version>1.2</version>
         </dependency>
-    
+
         <dependency>
             <groupId>com.DataModel</groupId>
             <artifactId>DataModel</artifactId>
@@ -78,7 +78,6 @@
         </dependency>
 
     </dependencies>
-
 
 
     <build>

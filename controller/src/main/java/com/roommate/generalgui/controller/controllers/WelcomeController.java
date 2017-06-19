@@ -33,7 +33,7 @@ public class WelcomeController {
 
     @RequestMapping("/")
     public String welcome() {
-        return "pages/welcomePage";
+        return "index";
     }
 
     @RequestMapping(value = "/signIn", method = RequestMethod.GET)
