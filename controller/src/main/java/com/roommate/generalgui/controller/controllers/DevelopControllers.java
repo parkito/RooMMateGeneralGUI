@@ -10,7 +10,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class DevelopControllers {
     @RequestMapping("/leftBar")
-    public String welcome() {
+    public String leftBar() {
         return "pages/skeleton/LeftPanel";
+    }
+
+    @RequestMapping("/upperBar")
+    public String upperBar() {
+        return "pages/skeleton/UpperPanel";
+    }
+
+    @RequestMapping("/signin")
+    public String signIn() {
+        return "pages/service/sign-in";
+    }
+
+    @RequestMapping("/signup")
+    public String signUp() {
+        return "pages/service/sign-up";
     }
 }
