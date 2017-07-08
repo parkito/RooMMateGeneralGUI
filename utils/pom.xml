@@ -9,10 +9,9 @@
         <artifactId>GUIChat</artifactId>
         <version>1.0</version>
     </parent>
-
+         
     <groupId>com.roommate.generalgui</groupId>
     <artifactId>utils</artifactId>
     <version>1.0</version>
-
-    
+         
 </project>
