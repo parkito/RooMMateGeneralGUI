@@ -1,9 +1,19 @@
 package ru.siksmfp.spring.annotation.conf;
 
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+import org.springframework.orm.hibernate5.HibernateTransactionManager;
+import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+import javax.sql.DataSource;
+import java.io.IOException;
+import java.util.Properties;
 
 /**
  * @author Artem Karnov @date 5/11/2018.
@@ -20,6 +30,7 @@ public class DBConfig {
     public HibernateTemplate hibernateTemplate() {
         return new HibernateTemplate(sessionFactory());
     }
+
     @Bean
     public SessionFactory sessionFactory() {
         LocalSessionFactoryBean lsfb = new LocalSessionFactoryBean();
@@ -33,6 +44,7 @@ public class DBConfig {
         }
         return lsfb.getObject();
     }
+
     @Bean
     public DataSource getDataSource() {
         BasicDataSource dataSource = new BasicDataSource();
@@ -42,10 +54,12 @@ public class DBConfig {
         dataSource.setPassword(env.getProperty("database.password"));
         return dataSource;
     }
+
     @Bean
-    public HibernateTransactionManager hibTransMan(){
+    public HibernateTransactionManager hibTransMan() {
         return new HibernateTransactionManager(sessionFactory());
     }
+
     private Properties hibernateProperties() {
         Properties properties = new Properties();
         properties.put("hibernate.dialect", env.getProperty("hibernate.dialect"));
