@@ -2,9 +2,9 @@ package ru.siksmfp.spring.annotation.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.siksmfp.spring.security.entity.Role;
-import ru.siksmfp.spring.security.entity.UserEntity;
-import ru.siksmfp.spring.security.repository.impl.UserRepository;
+import ru.siksmfp.spring.annotation.entity.Role;
+import ru.siksmfp.spring.annotation.entity.UserEntity;
+import ru.siksmfp.spring.annotation.repository.impl.UserRepository;
 
 /**
  * @author Artem Karnov @date 4/17/2018.
