@@ -1,15 +1,21 @@
 syntax: glob
+/mydb/
+/activemq-data/
 *.idea
-.gradle
-gradle
-build
-target
+.gradle/
+/*/gradle/
+/target/
+/*/target/
+/build/
+/*/build/
 *.iml
 \.orig\..*$
 \.orig$
 \.chg\..*$
 \.rej$
 \.conflict\~$
+app.log
+derby.log
 
 *.class
 
